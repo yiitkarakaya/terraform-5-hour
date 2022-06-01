@@ -29,4 +29,3 @@ override.tf.json
 # example: *tfplan*
 startup/.terraform.lock.hcl
 startup/module/.terraform.lock.hcl
-RDS/.terraform.lock.hcl
