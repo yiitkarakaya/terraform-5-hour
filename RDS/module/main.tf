@@ -1,5 +1,7 @@
 module rds {
-    source = "../"
+    source = "../"         #local folder
+    source = "github.com/reponame:1.0.0"         #local folder
+    source = ""
     region               = "us-east-1"
     allocated_storage    = 20
     engine               = "mysql"
