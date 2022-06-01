@@ -23,3 +23,23 @@ resource "aws_subnet" "public3" {
   tags                    = var.tags
   map_public_ip_on_launch = true
 }
+
+
+resource "aws_subnet" "private1" {
+  vpc_id                  = aws_vpc.main.id
+  cidr_block              = var.private_subnet1
+  tags                    = var.tags
+  map_public_ip_on_launch = false
+}
+resource "aws_subnet" "private2" {
+  vpc_id                  = aws_vpc.main.id
+  cidr_block              = var.private_subnet2
+  tags                    = var.tags
+  map_public_ip_on_launch = false
+}
+resource "aws_subnet" "private3" {
+  vpc_id                  = aws_vpc.main.id
+  cidr_block              = var.private_subnet3
+  tags                    = var.tags
+  map_public_ip_on_launch = false
+}
